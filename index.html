@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FromBoard Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-logo">
+                    <a href="#"><img src="images/Logo.png" alt="logo"></a>
+                    <p class="header-logo_text">FromBoard Delivery</p>
+                </div>
+                <div class="header-top_info">
+                    <div class="header-top_cost">
+                        <p class="header-top_text">Доставляем товары из заграницы в Россию</p>
+                        <p class="header-top_text">Стоимость от 550 рублей за заказ</p>
+                        <p class="header-top_text">1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                    </div>
+                    <div class="header-top_tel">
+                        <p class="header-tel">+7 (800) 123 45-67</p>
+                        <p class="header-tel_text">Звонки по России бесплатны</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <nav class="header-menu">
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#hero" class="nav-link">Калькулятор</a></li>
+                        <li><a href="#benefits" class="nav-link">О нас</a></li>
+                        <li><a href="#garanty" class="nav-link">Гарантии</a></li>
+                        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    </ul>
+                </nav>
+                <div class="header-menu_button">
+                    <a href="#" class="nav_btn btn">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-conatiner">
+            <section class="hero">
+            <div class="main-hero">
+                <div class="hero-left">
+                    <div class="hero-left_info">
+                        <h1 class="hero-left_title">Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
+                        <p class="hero-left_text">Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
+                    </div>
+                    <img src="images/Rectangle.png" alt="Картинка" class="main-image">
+                </div>
+                <div class="hero-right">
+                    <div class="hero-right_form">
+                    <div class="hero-right_info" id="hero">
+                        <h2 class="hero-right-title">Калькулятор доставки</h2>
+                        <p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
+                    </div>
+                    <form action="#" class="hero-form" id="heroForm">
+                        <div class="hero-form_block"> 
+                        <input name="name" type="text" class="hero-form_input" placeholder="Имя">                         
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="email" type="email" class="hero-form_input" placeholder="Почта">                          
+                          <span class="error-message"></span>
+                          </div>
+                          <div class="hero-form_block">
+                            <input name="tel" type="tel" class="hero-form_input" placeholder="Телефон">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="area" type="number" min="1" max="3" class="hero-form_input" placeholder="Общая площадь, м²">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="weight" type="number" min="1" max="20" class="hero-form_input" placeholder="Вес, кг">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="country" type="text" class="hero-form_input" placeholder="Страна покупки">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="city" type="text" class="hero-form_input" placeholder="Город покупки">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="region" type="text" class="hero-form_input" placeholder="Область доставки">                          
+                          <span class="error-message"></span>
+                        </div>
+                        <div class="hero-form_block">
+                            <input name="delivery" type="text" class="hero-form_input" placeholder="Город доставки">                          
+                          <span class="error-message"></span>
+                        </div>
+                          <button type="submit" class="btn hero-form_btn">Заказать расчёт</button>
+                    </form>
+                </div>
+                </div>
+                <!-- Модальное окно -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p class="modal-text">Сообщение успешно отправлено!</p>
+        </div>
+  </div>
+            </div>
+        </section>
+        <section class="benefits" id="benefits">
+            <h2 class="benefits-title">Наши преимущества</h2>
+            <div class="benefits-list">
+                <div class="benefist-list_left">
+                    <div class="benefist-item">
+                        <img src="images/Board.png" alt="board">
+                        <div class="benefist-info">
+                            <h3>Растоможка груза</h3>
+                            <p>Мы берём на себя все формальности и бумажную волокиту, связанную с растаможкой груза</p>
+                        </div>
+                    </div>
+                    <div class="benefist-item">
+                        <img src="images/Package.png" alt="package">
+                        <div class="benefist-info">
+                            <h3>Надёжная упаковка</h3>
+                            <p>Все товары упаковываются нашими специалистами с особым вниманием к деталям, гарантируя, что они дойдут в  безопасности и в отличном состоянии</p>
+                        </div>
+                    </div>
+                    <div class="benefist-item">
+                        <img src="images/Delivery.png" alt="delivery">
+                        <div class="benefist-info">
+                            <h3>Быстро и выгодно</h3>
+                            <p>Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться покупками как можно скорее.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="benefist-list_right">
+                    <div class="benefist-item">
+                        <img src="images/best support.png" alt="best support">
+                        <div class="benefist-info">
+                            <h3>Удобный сервис</h3>
+                            <p>Стремимся сделать процесс доставки максимально удобным для вас, чтобы опыт остался приятным и беззаботным</p>
+                        </div>
+                    </div>
+                    <div class="benefist-item">
+                        <img src="images/clear info.png" alt="clear info">
+                        <div class="benefist-info">
+                            <h3>Прозрачность работы</h3>
+                            <p>Мы предоставляем полный контроль над каждым этапом доставки, от момента заказа до момента прибытия заказа</p>
+                        </div>
+                    </div>
+                    <div class="benefist-item">
+                        <img src="images/garantee.png" alt="garantee">
+                        <div class="benefist-info">
+                            <h3>Страхование груза</h3>
+                            <p>Наше страхование обеспечивает полную защиту и покрытие почти все неприятные и неожиданные ситуации</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="garanty" id="garanty">
+            <div class="garanty-info">
+                <h2 class="garanty-title">Гарантии качества</h2>
+                <p class="garanty-text">Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке.Мы предоставляем вам надёжность и уверенность</p>
+            </div>
+            <div class="garanty-list">
+                <div class="garanty-left">
+                    <div class="garanty-item">
+                        <img src="images/Rectangle 1.png" alt="garanty">
+                        <h3 class="garanty-subtitle">Свидетельство о регистрации в РФ</h3>
+                    </div>
+                    <div class="garanty-item">
+                        <img src="images/Rectangle 2.png" alt="garanty">
+                        <h3 class="garanty-subtitle">Свидетельство о регистрации в США</h3>
+                    </div>
+                </div>
+                <div class="garanty-right">
+                    <div class="garanty-item">
+                        <img src="images/Rectangle 3.png" alt="garanty">
+                        <h3 class="garanty-subtitle">Свидетельство о регистрации в Китае</h3>
+                    </div>
+                    <div class="garanty-item">
+                        <img src="images/Rectangle 4.png" alt="garanty">
+                        <h3 class="garanty-subtitle">Свидетельство о регистрации в Великобритнии</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="garanty-btn">
+            <a href="#" class="btn garanty-link">Показать больше документов</a>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="reviews-previous">
+                <button class="reviews-btn"><img src="images/Previous.png" alt="Previous"></button>
+            </div>
+            <div class="reviews-feedback">
+                <h2 class="reviews-title">Отзывы</h2>
+                <div class="reviews-slider">
+                    <div class="reviews-content">
+                        <p>Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным</p>
+                        <div class="reviews-author">
+                            <p class="reviews-name">Анна</p>
+                            <img src="images/Quotes.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="reviews-content">
+                        <p>Я уже несколько лет заказываю дизайнерскую одежду из Франции через ваш сервис, и он никогда меня не подводил. Важно иметь надёжную компанию, которая позаботится о вашем заказе и предоставит все необходимые документы для ввоза в Россию</p>
+                        <div class="reviews-author">
+                            <p class="reviews-name">Алексей</p>
+                            <img src="images/Quotes.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="reviews-content">
+                        <p>Заказал шикарные часы из Швейцарии, и доставка была невероятно быстрой. Ваш сервис делает интернет-шоппинг более доступным и удобным</p>
+                        <div class="reviews-author">
+                            <p class="reviews-name">Игорь</p>
+                            <img src="images/Quotes.png" alt="slide">
+                        </div>
+                    </div>
+                    <div class="reviews-content">
+                        <p>Ваш сервис действительно изменил мой способ покупок. Я больше не переживаю о таможенных вопросах и документах - все у вас в порядке. Спасибо за ваше качество и надежность</p>
+                        <div class="reviews-author">
+                            <p class="reviews-name">Екатерина</p>
+                            <img src="images/Quotes.png" alt="slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-next">
+                <button class="reviews-btn"><img src="images/Next.png" alt="Next"></button>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Остались вопросы?</h2>
+                <form class="contact-form" action="#">
+                    <div class="contact-form_block">
+                      <input name="name" type="text" class="contact-form_input" placeholder="Имя">
+                      <span class="error-message"></span>
+                    </div>
+                    <div class="contact-form_block">
+                      <input name="email" type="email" class="contact-form_input" placeholder="Почта">
+                      <span class="error-message"></span>
+                    </div>
+                    <div class="contact-form_block">
+                      <input name="tel" type="tel" class="contact-form_input" placeholder="Телефон">
+                      <span class="error-message"></span>
+                    </div>
+                    <div class="contact-form_block">
+                      <input name="question" type="text" class="contact-form_input" placeholder="Тема вопроса">
+                      <span class="error-message"></span>
+                    </div>
+                    <div class="contact-form_block">
+                      <textarea class="contact-form_input" name="message" placeholder="Сообщение..."></textarea>
+                      <span class="error-message"></span>
+                    </div>
+                    </label>
+                    <button type="submit" class="btn contact-form_btn">Оставить заявку</button>
+                  </form>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top_left">
+                <a href="#"><img src="images/Logo.png" alt="logo"></a>
+                <p class="footer-logo_text">FromBoard Delivery</p>
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav_list">
+                <li class="footer-nav__item"><a href="#" class="footer-nav_link">Калькулятор</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav_link">О нас</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav_link">Гарантии</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav_link">Отзывы</a></li>
+              </ul>
+            </nav>
+            <div class="footer-info_tel">
+              <p class="footer-top_tel">+7 (800-12) 123-45-67</p>
+              <p class="footer-tel_text">Звонки по России бесплатны</p>
+            </div>
+          </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
